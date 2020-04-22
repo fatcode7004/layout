@@ -1,0 +1,97 @@
+header {
+	padding: 30px 0 57px;
+	background-color: #fbfbfb;
+}
+
+header .flex-container  {
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.menu-1024 {
+	display: none;
+	font-size: 48.9px;
+}
+
+.menu-1024__icon_background-gradient {
+	background-image: -o-linear-gradient(bottom, #f26522 0%, #fa0891 99%, #fa0891 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#f26522), color-stop(99%, #fa0891), to(#fa0891));
+	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
+	background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}
+
+.header-navigation__item_inline {
+	display: inline-block;
+	margin-right: 28.7px;
+	font-size: 16px;
+}
+
+header .link:hover {
+	text-decoration: underline;
+	color: #fc557c;
+	-webkit-transition: color, 0.15s, -webkit-text-decoration;
+	transition: color, 0.15s, -webkit-text-decoration;
+	-o-transition: text-decoration, color, 0.15s;
+	transition: text-decoration, color, 0.15s;
+	transition: text-decoration, color, 0.15s, -webkit-text-decoration;
+}
+
+.phone-block__item {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.phone-block__item_size_xl {
+	font-size: 25px;
+	font-weight: 700;
+	margin-right: 25px;
+}
+
+.call-form__button {
+	border: 1px solid #f82370;
+	background-color: transparent;
+	color: #f53f4f;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.call-form__button_size_m {
+	width: 207px;
+	height: 45px;
+}
+
+	.call-form__button:hover {
+		background-color: #f82370;
+		color: #ffffff;
+		cursor: pointer;
+		-webkit-transition: background-color, color, cursor 0.15s;
+		-o-transition: background-color, color, cursor 0.15s;
+		transition: background-color, color, cursor 0.15s;
+	}
+
+	.call-form__button:active {
+		color: #fff;
+		border-color: #f754a5;
+		background-color: #f754a5;
+		-webkit-transition: 0.15s;
+		-o-transition: 0.15s;
+		transition: 0.15s;
+	}
+
+.call-form__button_size_s {
+	display: none;
+}
+
+.call-form__button_size_s {
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: transparent;
+	background-image: url('../img2/phone.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 1px solid #fa0891;
+}
