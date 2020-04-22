@@ -42,10 +42,10 @@
 	line-height: 55px;
 	letter-spacing: 2px;
 	display: inline-block;
-	-webkit-animation-name: spinTag;
+	/*-webkit-animation-name: spinTag;
 	        animation-name: spinTag;
 	-webkit-animation-duration: 1.7s;
-	        animation-duration: 1.7s;
+	        animation-duration: 1.7s;*/
 	-webkit-transition: 1.7s, -webkit-transform;
 	transition: 1.7s, -webkit-transform;
 	-o-transition: transform, 1.7s;
