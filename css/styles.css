@@ -56,3 +56,15 @@ a {
   display: table;
   clear: both;
 }
+
+.active {
+  display: block !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.none {
+  display: none;
+}

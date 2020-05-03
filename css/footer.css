@@ -31,6 +31,7 @@ footer .flex-container {
 .contact {
 	font-size: 25px;
 	font-weight: 400;
+	margin-right: -101px;
 }
 
 .contact__item:first-child {
@@ -57,21 +58,30 @@ footer .flex-container {
 		-webkit-text-fill-color: transparent;
 }
 
+.society-container {
+	margin-right: 20px;
+}
+
 .call-form__button_size_x {
 	width: 248px;
 	height: 45px;
 }
 
-.society {
+.society-group {
 	margin-top: 25px;
 }
 
-.society__item_inline-block {
+.society-group__item_inline-block {
 	display: inline-block;
+	margin-left: 8px;
 }
 
-.society__icon {
-	background-image: url('../img2/sprite.png');
+.society-group__item_inline-block:first-of-type {
+	margin-left: 0;
+}
+
+.society-group__icon {
+	background-image: url('../img/compress/sprite.png');
 	background-repeat: no-repeat;
 	width: 40px;
 	height: 40px;
@@ -79,7 +89,7 @@ footer .flex-container {
 	margin-right: 13px;
 }
 
-.society__icon:hover {
+.society-group__icon:hover {
 	-webkit-transform: scale(1.05);
 	    -ms-transform: scale(1.05);
 	        transform: scale(1.05);
@@ -90,24 +100,24 @@ footer .flex-container {
 	transition: transform, 0.15s, -webkit-transform;
 }
 
-.society__icon:last-of-type {
+.society-group__icon:last-of-type {
 	margin-right: 0;
 }
 
 
-.society__icon_vk {
+.society-group__icon_vk {
 	background-position: left;
 }
 
-.society__icon_fb {
+.society-group__icon_fb {
 	background-position: -55px;
 }
 
-.society__icon_tw {
+.society-group__icon_tw {
 	background-position: -105px;
 }
 
-.society__icon_inst {
+.society-group__icon_inst {
 	background-position: -161px;
 }
 
