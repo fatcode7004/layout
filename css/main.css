@@ -146,7 +146,9 @@
 
 .btn-arrow__right {
     right: -28px;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 .do-list__picture_adaptive {

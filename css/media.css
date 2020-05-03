@@ -1,4 +1,4 @@
- @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 
 .fixed-container {
 	padding: 0 40px;
@@ -12,7 +12,8 @@ header {
 }
 
 header .flex-container {
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .menu-1024 {
@@ -21,13 +22,20 @@ header .flex-container {
 
 .header-navigation {
 	display: none;
-	order: 1;
+	-webkit-box-ordinal-group: 2;
+	    -ms-flex-order: 1;
+	        order: 1;
     width: 100%;
 }
 
 .header-navigation__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	text-align: center;
 }
 
@@ -372,7 +380,10 @@ header .fixed-container, .first .fixed-container {
 }
 
 .do-list.flex-container {
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .do-list__item {

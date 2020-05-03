@@ -1,6 +1,8 @@
 .popup-container {
   display: none;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -11,13 +13,16 @@
 }
 
 .popup-content {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   background-color: #fbfbfb;
   color: #f53f4f;
   width: 40%;
   max-width: 500px;
   padding: 50px 20px 20px;
-  box-shadow: 0 0 10px #00000050;
+  -webkit-box-shadow: 0 0 10px #00000050;
+          box-shadow: 0 0 10px #00000050;
 
 }
 
@@ -33,7 +38,10 @@
 }
 
 .popup-form .flex-container {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .popup-form__container_border-none {
