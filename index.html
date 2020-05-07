@@ -4,56 +4,12 @@
 		<title>FATCODE.RU</title>
 		
 		<meta charset="utf-8">
-		
-		<style>
-					/* roboto-300 - latin_cyrillic */
-			@font-face {
-				font-family: 'Roboto';
-				font-display: swap;
-				font-style: normal;
-				font-weight: 300;
-				src: local('Roboto Light'), local('Roboto-Light'),
-					 url('fonts/roboto-v20-latin_cyrillic-300.woff2') format('woff2'),
-				  	 url('fonts/roboto-v20-latin_cyrillic-300.woff') format('woff');
-			}
-					/* roboto-regular - latin_cyrillic */
-			@font-face {
-				font-family: 'Roboto';
-				font-display: swap;
-				font-style: normal;
-				font-weight: 400;
-				src: local('Roboto'), local('Roboto-Regular'),
-				   	 url('fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'),
-				   	 url('fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff');
-			}
-					/* roboto-700 - latin_cyrillic */
-			@font-face {
-				font-family: 'Roboto';
-				font-display: swap;
-				font-style: normal;
-				font-weight: 700;
-				src: local('Roboto Bold'), local('Roboto-Bold'),
-					 url('fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'),
-				     url('fonts/roboto-v20-latin_cyrillic-700.woff') format('woff');
-			}
 
-			body {
-				font-family: 'Roboto', Arial, sans-serif;
-				color: #1f1f24;
-			}
+		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-300.woff2" as="font" type="font/woff2">
+		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2">
+		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2" as="font" type="font/woff2">
 
-		</style>
-		
-		<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.min.css">
-		<link rel="stylesheet" type="text/css" href="css/header.min.css">
-		<link rel="stylesheet" type="text/css" href="css/main.min.css">
-		<link rel="stylesheet" type="text/css" href="css/footer.min.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/animation.min.css">
-		<link rel="stylesheet" type="text/css" href="css/popup.min.css">
-		<link rel="stylesheet" type="text/css" href="css/media.min.css">
+		<link rel="stylesheet" type="text/css" href="css/production.css">
 
 		<script defer src="js/build/production.js"></script>
 		
