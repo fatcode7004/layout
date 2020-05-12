@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>FATCODE.RU</title>
+		<title>FATCODE.RU | Frontend-разработка и веб-верстка</title>
 		
 		<meta charset="utf-8">
+
+		<meta name="description" content="Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа. Большой опыт работы и гарантия качества!">
 
 		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-300.woff2" as="font" type="font/woff2">
 		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2">
 		<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2" as="font" type="font/woff2">
 
-		<link rel="stylesheet" type="text/css" href="css/production.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/header.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/popup.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/animation.css">
+		<link rel="stylesheet" type="text/css" href="css/media.css">-->
 
-		<script defer src="js/build/production.js"></script>
-		
+		<link rel="stylesheet" type="text/css" href="css/production.min.css">
+
+	<!--<script defer src="js/libs/jquery-3.4.1.min.js"></script>
+		<script defer src="js/plugins/swiper.min.js"></script>
+		<script defer src="js/plugins/jquery.inputmask.min.js"></script>
+		<script defer src="js/plugins/jquery.validate.min.js"></script>		
+		<script defer src="js/global.js"></script>-->
+		<script defer src="js/build/production.min.js"></script>
+
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -26,42 +44,49 @@
 	<body>
 			<!-- Контейнер с формой заказ звонка -->
 		<div class="popup-container">
-			<div class="popup-content call-container">
+			<article class="popup-content call-container">
 				<h4 class="popup-content__headling">Заказать обратный звонок</h4>
 
 				<p class="popup-content__sub-headling">Оставьте свой телефон и мы перезвоним в ближайщее время</p>
 
-				<form class="popup-form">
+				<form method="POST" class="popup-form" id="callForm">
+					<input type="hidden" name="project_name" value="FATCODE.RU">
+					<input type="hidden" name="admin_email" value="casp7004@yandex.ru">
+					<input type="hidden" name="form_subject" value="Данные для обратной связи">
+
 					<fieldset class="popup-form__container_border-none flex-container">
 						<label class="popup-form__headling">*Ваше имя
 							<input class="popup-form__input popup-form__input_size_100" type="text" name="callBackName" required>
 						</label>
 
 						<label class="popup-form__headling">*Номер телефона
-							<input class="popup-form__input popup-form__input_size_100" type="tel" name="callBackPhone" required>
+							<input class="popup-form__input popup-form__input_size_100" type="tel" name="callBackPhone" placeholder="+7(___)___-__-__" required>
 						</label>
 
 						<input class="popup-form__submit_size_m" type="submit" name="callBackBtn" value="Заказать звонок">
 
-						<input class="popup-form__close-btn_size_s close-btn" type="button" name="callBackClose" value="закрыть форму">
-						
+						<input class="popup-form__close-btn_size_s close-btn" type="button" name="callBackClose" value="закрыть форму">						
 					</fieldset>
-				</form>
-			</div>
+				</form>				
+			</article>
 
-			<div class="popup-content order-container">
+			<article class="popup-content order-container">
 				<h4 class="popup-content__headling">Заказать проект</h4>
 
 				<p class="popup-content__sub-headling">Оставьте свой телефон и электронную почту, мы расскажем все, что Вас интересует</p>
 
-				<form class="popup-form">
+				<form method="POST" class="popup-form" id="orderForm">
+					<input type="hidden" name="project_name" value="FATCODE.RU">
+					<input type="hidden" name="admin_email" value="casp7004@yandex.ru">
+					<input type="hidden" name="form_subject" value="Данные для заказа">
+
 					<fieldset class="popup-form__container_border-none flex-container">
 						<label class="popup-form__headling">*Ваше имя
 							<input class="popup-form__input popup-form__input_size_100" type="text" name="orderName" required>
 						</label>
 
 						<label class="popup-form__headling">*Номер телефона
-							<input class="popup-form__input popup-form__input_size_100" type="tel" name="orderPhone" required>
+							<input class="popup-form__input popup-form__input_size_100" type="tel" name="orderPhone" placeholder="+7(___)___-__-__" required>
 						</label>
 
 						<label class="popup-form__headling">*Адрес электронной почты
@@ -73,7 +98,10 @@
 						<input class="popup-form__close-btn_size_s close-btn" type="button" name="orderClose" value="закрыть форму">			
 					</fieldset>
 				</form>
-			</div>	
+			</article>
+			<article class="popup-container__block-send">
+				<h4>Спасибо за обращение, мы ответим в течение 4 часов!</h4>
+			</article>
 		</div>
 	
 		<header>

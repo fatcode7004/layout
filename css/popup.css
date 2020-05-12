@@ -12,6 +12,22 @@
   z-index: 10;
 }
 
+.popup-container__block-send {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 25px;
+  margin: 25px;
+  max-width: 240px;
+  background-color: #fbfbfb;
+  color: #f53f4f;
+  font-size: 18px;  
+  -webkit-box-shadow: 0 0 10px #00000050;
+          box-shadow: 0 0 10px #00000050;
+  display: none;
+  opacity: 0;
+}
+
 .popup-content {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -36,6 +52,8 @@
   display: none;
   opacity: 0;
 }
+
+
 
 .popup-form .flex-container {
   -webkit-box-orient: vertical;
@@ -80,6 +98,31 @@
   margin-bottom: 20px;
 }
 
+.popup-form__input[type="tel"]::-webkit-input-placeholder {
+  color: #f53f4f;
+  opacity: 0.5;
+}
+
+.popup-form__input[type="tel"]::-moz-placeholder {
+  color: #f53f4f;
+  opacity: 0.5;
+}
+
+.popup-form__input[type="tel"]:-ms-input-placeholder {
+  color: #f53f4f;
+  opacity: 0.5;
+}
+
+.popup-form__input[type="tel"]::-ms-input-placeholder {
+  color: #f53f4f;
+  opacity: 0.5;
+}
+
+.popup-form__input[type="tel"]::placeholder {
+  color: #f53f4f;
+  opacity: 0.5;
+}
+
 .popup-form__input_size_100 {
   width: 100%;
 }
@@ -87,7 +130,6 @@
 .popup-form__input_size_50 {
   width: 40%;
 }
-
 
 .popup-form__submit_size_m {  
   border: 1px solid #f82370;
@@ -138,3 +180,9 @@
     -o-transition: color, cursor, 0.15s;
     transition: color, cursor, 0.15s;
   }
+
+input.error {
+  border-color: #ff4e2e;
+  background-color: #ff4e2e20;
+  color: #ff4e2e;
+}
