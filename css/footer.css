@@ -22,6 +22,8 @@ footer .flex-container {
 .footer-navigation .link:hover {
 	padding-bottom: 2px;
 	border-bottom: 2px solid #8993ad;
+	-webkit-transition: padding-bottom, border-bottom, 0.15s;
+	-o-transition: padding-bottom, border-bottom, 0.15s;
 	transition: padding-bottom, border-bottom, 0.15s;
 }
 
@@ -43,6 +45,8 @@ footer .flex-container {
 	transition: color, 0.15s;
 	-o-transition: color, 0.15s;
 	transition: color, 0.15s;
+	-webkit-transition: padding-bottom, border-bottom, color, 0.15s;
+	-o-transition: padding-bottom, border-bottom, color, 0.15s;
 	transition: padding-bottom, border-bottom, color, 0.15s;
 }
 
