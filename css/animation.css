@@ -5,21 +5,25 @@
 
 @-webkit-keyframes spinTag {
 	from {-webkit-transform: rotateZ(200deg)
-		  translate(-900px, 120px);transform: rotateZ(200deg)
+		  translate(-900px, 120px);
+		  transform: rotateZ(200deg)
 		  translate(-900px, 120px);}
 
 	to {-webkit-transform: rotateZ(none)
-		translate(none);transform: rotateZ(none)
+		translate(none);
+		transform: rotateZ(none)
 		translate(none);}
 }
 
 @keyframes spinTag {
 	from {-webkit-transform: rotateZ(200deg)
-		  translate(-900px, 120px);transform: rotateZ(200deg)
+		  translate(-900px, 120px);
+		  transform: rotateZ(200deg)
 		  translate(-900px, 120px);}
 
 	to {-webkit-transform: rotateZ(none)
-		translate(none);transform: rotateZ(none)
+		translate(none);
+		transform: rotateZ(none)
 		translate(none);}
 }
 

@@ -50,9 +50,14 @@ $(document).ready(function() {
 
 	}
 
+				//Функция вызова меню
+
 	function touchNavShow(event) {
 		event.preventDefault();
 		headerNav.toggleClass('active');
+		menuBtn.animate({opacity: '0'}, 0);
+		menuBtn.animate({opacity: '1'}, 300);
+		menuBtn.toggleClass('close');
 	}
 
 	inputTel.inputmask({  //Подключения плагина маски для телефонных номеров в форме

@@ -20,12 +20,9 @@ footer .flex-container {
 }
 
 .footer-navigation .link:hover {
-	text-decoration: underline;
-	-webkit-transition: -webkit-text-decoration 0.15s;
-	transition: -webkit-text-decoration 0.15s;
-	-o-transition: text-decoration 0.15s;
-	transition: text-decoration 0.15s;
-	transition: text-decoration 0.15s, -webkit-text-decoration 0.15s;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #8993ad;
+	transition: padding-bottom, border-bottom, 0.15s;
 }
 
 .contact {
@@ -39,13 +36,14 @@ footer .flex-container {
 }
 
 .contact .link:hover {
-	text-decoration: underline;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #fc557c;
 	color: #fc557c;
-	-webkit-transition: color, 0.15s, -webkit-text-decoration;
-	transition: color, 0.15s, -webkit-text-decoration;
-	-o-transition: text-decoration, color, 0.15s;
-	transition: text-decoration, color, 0.15s;
-	transition: text-decoration, color, 0.15s, -webkit-text-decoration;
+	-webkit-transition: color, 0.15s;
+	transition: color, 0.15s;
+	-o-transition: color, 0.15s;
+	transition: color, 0.15s;
+	transition: padding-bottom, border-bottom, color, 0.15s;
 }
 
 .contact__icon_background-gradient {

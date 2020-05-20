@@ -26,6 +26,7 @@ header .flex-container {
 	    -ms-flex-order: 1;
 	        order: 1;
     width: 100%;
+    transition: 0.33s;
 }
 
 .header-navigation__list {
@@ -45,6 +46,7 @@ header .flex-container {
 	border-bottom: 1px solid #f82370;
 	font-size: 20px;
 }
+
 
 /*FIRST BLOCK*/
 

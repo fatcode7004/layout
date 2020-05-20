@@ -21,6 +21,14 @@ header .flex-container  {
 	background-image: url('../img/burger-btn.svg');
 	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.menu-1024__button.close {
+	background-image: url('../img/burger-btn-close.svg');
+	background-repeat: no-repeat;	
+	background-size: contain;
+	background-position: center;
 }
 
 .header-navigation__item_inline {
@@ -30,13 +38,14 @@ header .flex-container  {
 }
 
 header .link:hover {
-	text-decoration: underline;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #fc557c;
 	color: #fc557c;
-	-webkit-transition: color, 0.15s, -webkit-text-decoration;
-	transition: color, 0.15s, -webkit-text-decoration;
-	-o-transition: text-decoration, color, 0.15s;
-	transition: text-decoration, color, 0.15s;
-	transition: text-decoration, color, 0.15s, -webkit-text-decoration;
+	-webkit-transition: color, 0.15s;
+	transition: color, 0.15s;
+	-o-transition: color, 0.15s;
+	transition: color, 0.15s;
+	transition: padding-bottom, border-bottom, color, 0.15s, -webkit-text-decoration;
 }
 
 .phone-block__item {

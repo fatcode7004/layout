@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	 xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="127"
+	 height="60">
+	<defs>
+		<path xmlns="http://www.w3.org/2000/svg" 
+				id="logoPath" 
+				d="M 1,10 
+				L 50,10 
+				L 55,9 
+				L 65,10 
+				L 80,10 
+				L 125,10" 
+				fill="transparent" 
+				stroke="red" 
+				stroke-width="1px"/>
+	</defs>
+
+	<style>
+		@font-face {
+		  font-family: 'Poiret One';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Poiret One'), local('PoiretOne-Regular'),
+		       url('../fonts/poiret-one-v8-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		       url('../fonts/poiret-one-v8-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		}
+
+		text {
+			font-family: 'Poiret One';
+			font-size: 32px;
+			fill: #9ed1cd;
+			cursor: pointer;
+			letter-spacing: -3px;
+		}
+	</style>
+
+	<text x="4" y="20" style="font-kerning:normal" dominant-baseline="text-before-edge">
+		<textPath xlink:href="#logoPath">FATCODE</textPath>
+	</text>
+</svg>
